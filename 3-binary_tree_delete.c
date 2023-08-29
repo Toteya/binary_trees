@@ -24,9 +24,9 @@ void binary_tree_delete(binary_tree_t *tree)
  */
 void delete_subtree(binary_tree_t *tree)
 {
-	if(tree->left)
+	if (tree->left)
 		delete_subtree(tree->left);
-	if(tree->right)
+	if (tree->right)
 		delete_subtree(tree->right);
 
 	free(tree);
