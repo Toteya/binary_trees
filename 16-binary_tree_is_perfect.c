@@ -12,6 +12,9 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int is_perfect = 1, depth = 0, leaf_depth = 0;
 
+	if (!tree)
+		return (0);
+
 	check_perfect((binary_tree_t *) tree, &is_perfect, &leaf_depth, depth);
 	return (is_perfect);
 }
