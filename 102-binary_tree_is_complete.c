@@ -19,7 +19,6 @@ int binary_tree_is_complete(const binary_tree_t *tree)
 	if (!tree)
 		return (0);
 
-
 	bt = (binary_tree_t *) tree;
 	check(bt, &is_complete, &leaf_level, level, &low_leaf);
 	return (is_complete);
